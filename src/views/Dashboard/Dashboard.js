@@ -539,77 +539,30 @@ class Dashboard extends Component {
           <Col xs="12" sm="6" lg="3">
             <Card className="text-white bg-green">
               <CardBody className="pb-0">
-                <ButtonGroup className="float-right">
-                  <ButtonDropdown
-                    id="card1"
-                    isOpen={this.state.card1}
-                    toggle={() => {
-                      this.setState({ card1: !this.state.card1 });
-                    }}
-                  >
-                    <DropdownToggle caret className="p-0" color="transparent">
-                      <i className="icon-settings" />
-                    </DropdownToggle>
-                    <DropdownMenu right>
-                      <DropdownItem>Action</DropdownItem>
-                      <DropdownItem>Another action</DropdownItem>
-                      <DropdownItem disabled>Disabled action</DropdownItem>
-                      <DropdownItem>Something else here</DropdownItem>
-                    </DropdownMenu>
-                  </ButtonDropdown>
-                </ButtonGroup>
-                <div className="text-value">100% Match</div>
+                <div className="text-value">98% Match</div>
                 <div>10,610 Enrolled</div>
+                <div> <h4> <i className="icon-cursor" /> Career Statistics </h4> </div>
               </CardBody>
-              <div className="text-value" style={{ height: "70px" }} />
-            </Card>
+              <div className="text-value" style={{ height: "40px" }} />
+              </Card>
           </Col>
           <Col>
             <Card>
               <CardBody>
                 <Row>
-                  <Col xs="12" sm="10" lg="10">
-                    <h3>Saint Cloud State University</h3>
+                  <Col xs="10" sm="5" lg="2">
+                  <img src={'https://specials-images.forbesimg.com/imageserve/55b94de9e4b05c2c343245db/300x300.jpg?fit=scale&background=000000'} width="100px"/>
+                  </Col>
+                  <Col>
+                    <h3>Software Engineering, Saint Cloud State University</h3>
                     <div className="small text-muted">
                       Saint Cloud, MN (3 Miles Away)
                     </div>
                     <div classname="small text">4 Year, Public</div>
                   </Col>
                 </Row>
-                <div className="text-value" style={{ height: "30px" }} />
+                <div className="text-value" style={{ height: "10px" }} />
               </CardBody>
-            </Card>
-          </Col>
-        </Row>
-        <Row>
-          <Col xs="12" sm="6" lg="3">
-            <Card className="text-white bg-blue">
-              <CardBody className="pb-0">
-                <ButtonGroup className="float-right">
-                  <ButtonDropdown
-                    id="card1"
-                    isOpen={this.state.card1}
-                    toggle={() => {
-                      this.setState({ card1: !this.state.card1 });
-                    }}
-                  >
-                    <DropdownToggle caret className="p-0" color="transparent">
-                      <i className="icon-settings" />
-                    </DropdownToggle>
-                    <DropdownMenu right>
-                      <DropdownItem>Action</DropdownItem>
-                      <DropdownItem>Another action</DropdownItem>
-                      <DropdownItem disabled>Disabled action</DropdownItem>
-                      <DropdownItem>Something else here</DropdownItem>
-                    </DropdownMenu>
-                  </ButtonDropdown>
-                </ButtonGroup>
-                <div className="text-value">99% Placement</div>
-                <div>
-                  56 careers for Software engineering found within 50 miles
-                </div>
-              </CardBody>
-              <div className="text-value" style={{ height: "70px" }} />
             </Card>
           </Col>
         </Row>
@@ -617,59 +570,94 @@ class Dashboard extends Component {
           <Col xs="12" sm="6" lg="3">
             <Card className="text-white bg-green">
               <CardBody className="pb-0">
-                <ButtonGroup className="float-right" />
-                <div className="text-value">98% Match</div>
-                <div>12,259 Enrolled</div>
+                <div className="text-value">84% Match</div>
+                <div>10,610 Enrolled</div>
+                <div className="text-value">Career Statistics  <i className="icon-cursor" /></div>
               </CardBody>
-              <div className="text-value" style={{ height: "70px" }} />
+              <div className="text-value" style={{ height: "40px" }} />
+              </Card>
+          </Col>
+          <Col>
+            <Card>
+              <CardBody>
+                <Row>
+                  <Col xs="10" sm="5" lg="2">
+                  <img src={'https://specials-images.forbesimg.com/imageserve/55b94de9e4b05c2c343245db/300x300.jpg?fit=scale&background=000000'} width="100px"/>
+                  </Col>
+                  <Col>
+                    <h3>Computer Science, Saint Cloud State University</h3>
+                    <div className="small text-muted">
+                      Saint Cloud, MN (3 Miles Away)
+                    </div>
+                    <div classname="small text">4 Year, Public</div>
+                  </Col>
+                </Row>
+                <div className="text-value" style={{ height: "10px" }} />
+              </CardBody>
+            </Card>
+          </Col>
+        </Row>
+
+        <Row>
+          <Col xs="12" sm="6" lg="3">
+            <Card className="text-white bg-green">
+              <CardBody className="pb-0">
+                <div className="text-value">72% Match</div>
+                <div>10,610 Enrolled</div>
+                <div className="text-value">Career Statistics <i className="icon-cursor" /> </div>
+              </CardBody>
+              <div className="text-value" style={{ height: "40px" }} />
+              </Card>
+          </Col>
+          <Col>
+            <Card>
+              <CardBody>
+                <Row>
+                  <Col xs="10" sm="5" lg="2">
+                  <img src={'https://www.sctcc.edu/sites/all/themes/custom/images/sctcc-icons/@2x/logo@2x.png'} width="100px" height="100px"/>
+                  </Col>
+                  <Col>
+                    <h3>Computer Programming, Saint Cloud Technical and Community College</h3>
+                    <div className="small text-muted">
+                      Saint Cloud, MN (6 Miles Away)
+                    </div>
+                    <div classname="small text">2 Year, Public</div>
+                  </Col>
+                </Row>
+                <div className="text-value" style={{ height: "10px" }} />
+              </CardBody>
+            </Card>
+          </Col>
+        </Row>
+
+        <Row>
+          <Col xs="12" sm="6" lg="3">
+            <Card className="text-white bg-yellow">
+              <CardBody className="pb-0">
+                <ButtonGroup className="float-right" />
+                <div className="text-value">67% Match</div>
+                <div>12,259 Enrolled</div>
+                <div className="text-value">Career Statistics <i className="icon-cursor" /> </div>
+              </CardBody>
+              <div className="text-value" style={{ height: "40px" }} />
             </Card>
           </Col>
           <Col>
             <Card>
               <CardBody>
                 <Row>
-                  <Col xs="12" sm="10" lg="10">
-                    <h3>Mankato State University</h3>
+                  <Col xs="10" sm="5" lg="2">
+                  <img src={'https://msumavericks.com/images/logos/site/site.png'} width="100px"/> </Col>
+                  <Col>
+                    <h3>Computer Information Technology, Mankato State University</h3>
                     <div className="small text-muted">
                       Mankato, MN (114 Miles Away)
                     </div>
                     <div classname="big text">4 Year, Public</div>
                   </Col>
                 </Row>
-                <div className="text-value" style={{ height: "30px" }} />
+                <div className="text-value" style={{ height: "10px" }} />
               </CardBody>
-            </Card>
-          </Col>
-        </Row>
-        <Row>
-          <Col xs="12" sm="6" lg="3">
-            <Card className="text-white bg-blue">
-              <CardBody className="pb-0">
-                <ButtonGroup className="float-right">
-                  <ButtonDropdown
-                    id="card1"
-                    isOpen={this.state.card1}
-                    toggle={() => {
-                      this.setState({ card1: !this.state.card1 });
-                    }}
-                  >
-                    <DropdownToggle caret className="p-0" color="transparent">
-                      <i className="icon-settings" />
-                    </DropdownToggle>
-                    <DropdownMenu right>
-                      <DropdownItem>Action</DropdownItem>
-                      <DropdownItem>Another action</DropdownItem>
-                      <DropdownItem disabled>Disabled action</DropdownItem>
-                      <DropdownItem>Something else here</DropdownItem>
-                    </DropdownMenu>
-                  </ButtonDropdown>
-                </ButtonGroup>
-                <div className="text-value">96% Placement</div>
-                <div>
-                  25 careers for Software engineering found within 50 miles
-                </div>
-              </CardBody>
-              <div className="text-value" style={{ height: "70px" }} />
             </Card>
           </Col>
         </Row>
@@ -681,59 +669,32 @@ class Dashboard extends Component {
                 <ButtonGroup className="float-right" />
                 <div className="text-value">52% Match</div>
                 <div>12,259 Enrolled</div>
+                <div className="text-value">Career Statistics <i className="icon-cursor" /> </div>
+
               </CardBody>
-              <div className="text-value" style={{ height: "70px" }} />
+              <div className="text-value" style={{ height: "40px" }} />
             </Card>
           </Col>
           <Col>
             <Card>
               <CardBody>
                 <Row>
-                  <Col xs="12" sm="10" lg="10">
-                    <h3>University Of Nebraska At Omaha</h3>
+                <Col xs="10" sm="5" lg="2">
+                  <img src={'https://msep.mhec.org/sites/default/files/UNO-icon-color.png'} width="100px"/> </Col>
+                  <Col>
+                    <h3>Computer Science, University Of Nebraska At Omaha</h3>
                     <div className="small text-muted">
                       Omaha, NE (379 Miles Away)
                     </div>
                     <div classname="big text">4 Year, Public</div>
                   </Col>
                 </Row>
-                <div className="text-value" style={{ height: "30px" }} />
+                <div className="text-value" style={{ height: "10px" }} />
               </CardBody>
             </Card>
           </Col>
         </Row>
-        <Row>
-          <Col xs="12" sm="6" lg="3">
-            <Card className="text-white bg-blue">
-              <CardBody className="pb-0">
-                <ButtonGroup className="float-right">
-                  <ButtonDropdown
-                    id="card1"
-                    isOpen={this.state.card1}
-                    toggle={() => {
-                      this.setState({ card1: !this.state.card1 });
-                    }}
-                  >
-                    <DropdownToggle caret className="p-0" color="transparent">
-                      <i className="icon-settings" />
-                    </DropdownToggle>
-                    <DropdownMenu right>
-                      <DropdownItem>Action</DropdownItem>
-                      <DropdownItem>Another action</DropdownItem>
-                      <DropdownItem disabled>Disabled action</DropdownItem>
-                      <DropdownItem>Something else here</DropdownItem>
-                    </DropdownMenu>
-                  </ButtonDropdown>
-                </ButtonGroup>
-                <div className="text-value">97% Placement</div>
-                <div>
-                  48 careers for Software engineering found within 50 miles
-                </div>
-              </CardBody>
-              <div className="text-value" style={{ height: "70px" }} />
-            </Card>
-          </Col>
-        </Row>
+        
         <Row>
           <Col>
             <Card>
