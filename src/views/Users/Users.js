@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Badge, Card, CardBody, CardHeader, Col, Row, Table } from 'reactstrap';
+import Dropzone from 'react-dropzone'
+
 
 import usersData from './UsersData'
 
@@ -35,30 +37,23 @@ class Users extends Component {
 
     return (
       <div className="animated fadeIn">
+      
         <Row>
-          <Col xl={6}>
-            <Card>
-              <CardHeader>
-                <i className="fa fa-align-justify"></i> Users <small className="text-muted">example</small>
-              </CardHeader>
-              <CardBody>
-                <Table responsive hover>
-                  <thead>
-                    <tr>
-                      <th scope="col">id</th>
-                      <th scope="col">name</th>
-                      <th scope="col">registered</th>
-                      <th scope="col">role</th>
-                      <th scope="col">status</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {userList.map((user, index) =>
-                      <UserRow key={index} user={user}/>
-                    )}
-                  </tbody>
-                </Table>
-              </CardBody>
+          <Col align="center">
+            <Card align="center">
+            <Dropzone onDrop={acceptedFiles => console.log(acceptedFiles)}>
+              {({getRootProps, getInputProps}) => (
+                <section>
+                  <div {...getRootProps()}>
+                    <input {...getInputProps()} />
+                      <p>Drag 'n' drop some files here, or click to select files
+                        <i className="cui-file icons font-2xl d-block mt-4"/>
+                     </p>
+                  </div>
+                </section>
+  )}
+</Dropzone>
+              
             </Card>
           </Col>
         </Row>
