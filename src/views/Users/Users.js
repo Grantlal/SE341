@@ -51,9 +51,8 @@ class Users extends Component {
                      </p>
                   </div>
                 </section>
-  )}
-</Dropzone>
-              
+               )}
+              </Dropzone>
             </Card>
           </Col>
         </Row>

@@ -20,6 +20,7 @@ import {
   Row,
   Table
 } from "reactstrap";
+import { AppAsideToggler, AppHeaderDropdown, AppNavbarBrand, AppSidebarToggler } from '@coreui/react';
 import { CustomTooltips } from "@coreui/coreui-plugin-chartjs-custom-tooltips";
 import { getStyle, hexToRgba } from "@coreui/coreui/dist/js/coreui-utilities";
 
@@ -661,7 +662,22 @@ class Dashboard extends Component {
             </Card>
           </Col>
         </Row>
-
+        <AppHeaderDropdown direction="down">
+            <DropdownToggle nav>
+              <img src={'../../assets/img/avatars/6.jpg'} className="img-avatar" alt="admin@bootstrapmaster.com" />
+            </DropdownToggle>
+            <DropdownMenu right style={{ right: 'auto' }}>
+              <DropdownItem header tag="div" className="text-center"><strong>Account</strong></DropdownItem>
+              <DropdownItem><i className="fa fa-bell-o"></i> Updates<Badge color="info">42</Badge></DropdownItem>
+              <DropdownItem><i className="fa fa-envelope-o"></i> Messages<Badge color="success">42</Badge></DropdownItem>
+              <DropdownItem><i className="fa fa-tasks"></i> Tasks<Badge color="danger">42</Badge></DropdownItem>
+              <DropdownItem><i className="fa fa-comments"></i> Comments<Badge color="warning">42</Badge></DropdownItem>
+              <DropdownItem header tag="div" className="text-center"><strong>Settings</strong></DropdownItem>
+              <DropdownItem><i className="fa fa-user"></i> Profile</DropdownItem>
+              <DropdownItem divider />
+              <DropdownItem onClick={e => this.props.onLogout(e)}><i className="fa fa-lock"></i> Logout</DropdownItem>
+            </DropdownMenu>
+          </AppHeaderDropdown>
         <Row>
           <Col xs="12" sm="6" lg="3">
             <Card className="text-white bg-yellow">
@@ -670,7 +686,6 @@ class Dashboard extends Component {
                 <div className="text-value">52% Match</div>
                 <div>12,259 Enrolled</div>
                 <div> <h4> <i className="icon-cursor" /> Program Highlights </h4> </div>
-
               </CardBody>
               <div className="text-value" style={{ height: "40px" }} />
             </Card>
