@@ -604,8 +604,21 @@ class Dashboard extends Component {
             <Card className="text-white bg-green">
               <CardBody className="pb-0">
                 <div className="text-value">72% Match</div>
-                <div>10,610 Enrolled</div>
-                <div> <h4> <i className="icon-cursor" /> Program Highlights </h4> </div>
+                <div>2,782 Enrolled</div>
+                <div>  
+                  <AppHeaderDropdown direction="down">
+                    <DropdownToggle nav>
+                      <h4 text-color="white"> <i className="icon-cursor" /> Program Highlights </h4>
+                    </DropdownToggle>
+                     <DropdownMenu left style={{ left: 'auto' }}>
+                      <DropdownItem header tag="div" className="text-center"><strong>Highlights</strong></DropdownItem>
+                      <DropdownItem> <i className="cui-star icons"></i> 100% placement rate in 2017 <br></br> </DropdownItem>
+                      <DropdownItem><i className="cui-star icons"></i> Graduates receive an average hourly pay of $35 per hour <br></br> </DropdownItem>
+                      <DropdownItem><i className="cui-star icons"></i> Many graduates work at notable companies like Ch Robinson, <br></br> 
+                                                                       GeoComm, and Wolters Kluwer. </DropdownItem>
+
+                      </DropdownMenu>
+                  </AppHeaderDropdown> </div>
               </CardBody>
               <div className="text-value" style={{ height: "40px" }} />
               </Card>
@@ -638,7 +651,18 @@ class Dashboard extends Component {
                 <ButtonGroup className="float-right" />
                 <div className="text-value">67% Match</div>
                 <div>12,259 Enrolled</div>
-                <div> <h4> <i className="icon-cursor" /> Program Highlights </h4> </div>
+                <div>  
+                  <AppHeaderDropdown direction="down">
+                    <DropdownToggle nav>
+                      <h4 textcolor="white"> <i className="icon-cursor" /> Program Highlights </h4>
+                    </DropdownToggle>
+                     <DropdownMenu left style={{ left: 'auto' }}>
+                      <DropdownItem header tag="div" className="text-center"><strong>Highlights</strong></DropdownItem>
+                      <DropdownItem> <i className="cui-star icons"></i> 31% of graduates work at software companies <br></br> </DropdownItem>
+                      <DropdownItem><i className="cui-star icons"></i> 26% of graduates work in healthcare or government agencies <br></br> </DropdownItem>
+                      <DropdownItem divider />
+                      </DropdownMenu>
+                  </AppHeaderDropdown> </div>
               </CardBody>
               <div className="text-value" style={{ height: "40px" }} />
             </Card>
@@ -671,21 +695,17 @@ class Dashboard extends Component {
                 <div className="text-value">52% Match</div>
                 <div>12,259 Enrolled </div>
                 <div>  
-                  
                   <AppHeaderDropdown direction="down">
                     <DropdownToggle nav>
                       <h4 textcolor="white"> <i className="icon-cursor" /> Program Highlights </h4>
                     </DropdownToggle>
-                     <DropdownMenu right style={{ right: 'auto' }}>
-                      <DropdownItem header tag="div" className="text-center"><strong>Account</strong></DropdownItem>
-                      <DropdownItem><i className="fa fa-bell-o"></i> Updates<Badge color="info">42</Badge></DropdownItem>
-                      <DropdownItem><i className="fa fa-envelope-o"></i> Messages<Badge color="success">42</Badge></DropdownItem>
-                      <DropdownItem><i className="fa fa-tasks"></i> Tasks<Badge color="danger">42</Badge></DropdownItem>
-                      <DropdownItem><i className="fa fa-comments"></i> Comments<Badge color="warning">42</Badge></DropdownItem>
-                      <DropdownItem header tag="div" className="text-center"><strong>Settings</strong></DropdownItem>
-                      <DropdownItem><i className="fa fa-user"></i> Profile</DropdownItem>
+                     <DropdownMenu left style={{ left: 'auto' }}>
+                      <DropdownItem header tag="div" className="text-center"><strong>Highlights</strong></DropdownItem>
+                      <DropdownItem> <i className="cui-star icons"></i> Named top public university for veteran <br></br>   
+                                                                        students studying cyber security</DropdownItem>
+                      <DropdownItem><i className="cui-star icons"></i> Designated as a national center of academic <br></br> 
+                                                                        excellence in cyber operation by the NSA</DropdownItem>
                       <DropdownItem divider />
-                      <DropdownItem onClick={e => this.props.onLogout(e)}><i className="fa fa-lock"></i> Logout</DropdownItem>
                       </DropdownMenu>
                   </AppHeaderDropdown> </div>
               </CardBody>
