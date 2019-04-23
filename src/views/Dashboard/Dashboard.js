@@ -540,9 +540,22 @@ class Dashboard extends Component {
           <Col xs="12" sm="6" lg="3">
             <Card className="text-white bg-green">
               <CardBody className="pb-0">
-                <div className="text-value">98% Match</div>
-                <div>10,610 Enrolled</div>
-                <div> <h4> <i className="icon-cursor" /> Program Highlights </h4> </div>
+                <div className="text-value"><center>98% Match </center></div>
+                <div> <center> 10,610 Enrolled </center> </div>
+                <div> 
+                  <AppHeaderDropdown>
+                    <DropdownToggle block color="green">
+                      <div className="text-white bg-green"> <i className="icon-cursor" /> Program Highlights </div>
+                    </DropdownToggle>
+                     <DropdownMenu left style={{ left: 'auto' }}>
+                      <DropdownItem header tag="div" className="text-center"><strong>Highlights</strong></DropdownItem>
+                      <DropdownItem> <i className="cui-star icons"></i> 13,740 projected annual opening software developer jobs from 2012-2022 <br></br> </DropdownItem>
+                      <DropdownItem><i className="cui-star icons"></i> $97,240 median annual wage <br></br> </DropdownItem>
+                      <DropdownItem><i className="cui-star icons"></i> Ranked #2 for best technology jobs </DropdownItem>
+                      <DropdownItem><i className="cui-star icons"></i> Ranked #2 for best STEM jobs </DropdownItem>
+                      </DropdownMenu>
+                  </AppHeaderDropdown>
+                </div>
               </CardBody>
               <div className="text-value" style={{ height: "40px" }} />
               </Card>
@@ -571,9 +584,22 @@ class Dashboard extends Component {
           <Col xs="12" sm="6" lg="3">
             <Card className="text-white bg-green">
               <CardBody className="pb-0">
-                <div className="text-value">84% Match</div>
-                <div>10,610 Enrolled</div>
-                <div> <h4> <i className="icon-cursor" /> Program Highlights </h4> </div>
+                <div className="text-value"> <center> 84% Match </center></div>
+                <div> <center> 10,610 Enrolled </center> </div>
+                <div>  
+                  <AppHeaderDropdown direction="down">
+                  <DropdownToggle block color="green">
+                      <div className="text-white bg-green"> <i className="icon-cursor" /> Program Highlights </div>
+                    </DropdownToggle>
+                     <DropdownMenu left style={{ left: 'auto' }}>
+                      <DropdownItem header tag="div" className="text-center"><strong>Highlights</strong></DropdownItem>
+                      <DropdownItem> <i className="cui-star icons"></i> 100% placement rate for the past 5 years of graduates <br></br> </DropdownItem>
+                      <DropdownItem><i className="cui-star icons"></i> 1 of 2 Minnesota Schools acredited by the Computing Accreditation Commission <br></br>
+                                                                      of Accreditation Board for Engineers Technology </DropdownItem>
+                      <DropdownItem><i className="cui-star icons"></i> Laboratory projects considered graduate-level work</DropdownItem>
+
+                      </DropdownMenu>
+                  </AppHeaderDropdown> </div>
              </CardBody>
               <div className="text-value" style={{ height: "40px" }} />
               </Card>
@@ -603,12 +629,12 @@ class Dashboard extends Component {
           <Col xs="12" sm="6" lg="3">
             <Card className="text-white bg-green">
               <CardBody className="pb-0">
-                <div className="text-value">72% Match</div>
-                <div>2,782 Enrolled</div>
+                <div className="text-value"> <center> 72% Match </center> </div>
+                <div> <center> 2,782 Enrolled </center> </div>
                 <div>  
                   <AppHeaderDropdown direction="down">
-                    <DropdownToggle nav>
-                      <h4 text-color="white"> <i className="icon-cursor" /> Program Highlights </h4>
+                  <DropdownToggle block color="green">
+                      <div className="text-white bg-green"> <i className="icon-cursor" /> Program Highlights </div>
                     </DropdownToggle>
                      <DropdownMenu left style={{ left: 'auto' }}>
                       <DropdownItem header tag="div" className="text-center"><strong>Highlights</strong></DropdownItem>
@@ -649,12 +675,12 @@ class Dashboard extends Component {
             <Card className="text-white bg-yellow">
               <CardBody className="pb-0">
                 <ButtonGroup className="float-right" />
-                <div className="text-value">67% Match</div>
-                <div>12,259 Enrolled</div>
+                <div className="text-value"> <center> 67% Match </center></div>
+                <div> <center> 12,259 Enrolled </center> </div>
                 <div>  
                   <AppHeaderDropdown direction="down">
-                    <DropdownToggle nav>
-                      <h4 textcolor="white"> <i className="icon-cursor" /> Program Highlights </h4>
+                  <DropdownToggle block color="yellow">
+                      <div className="text-white bg-yellow"> <i className="icon-cursor" /> Program Highlights </div>
                     </DropdownToggle>
                      <DropdownMenu left style={{ left: 'auto' }}>
                       <DropdownItem header tag="div" className="text-center"><strong>Highlights</strong></DropdownItem>
@@ -692,12 +718,12 @@ class Dashboard extends Component {
             <Card className="text-white bg-yellow">
               <CardBody className="pb-0">
                 <ButtonGroup className="float-right" />
-                <div className="text-value">52% Match</div>
-                <div>12,259 Enrolled </div>
+                <div className="text-value"><center> 52% Match </center> </div>
+                <div> <center> 12,259 Enrolled </center> </div>
                 <div>  
                   <AppHeaderDropdown direction="down">
-                    <DropdownToggle nav>
-                      <h4 textcolor="white"> <i className="icon-cursor" /> Program Highlights </h4>
+                  <DropdownToggle block color="yellow">
+                      <div className="text-white bg-yellow"> <i className="icon-cursor" /> Program Highlights </div>
                     </DropdownToggle>
                      <DropdownMenu left style={{ left: 'auto' }}>
                       <DropdownItem header tag="div" className="text-center"><strong>Highlights</strong></DropdownItem>
