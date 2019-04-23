@@ -29,7 +29,7 @@ class DefaultHeader extends Component {
             <Link to="/users" className="nav-link" >Upload Report</Link>
           </NavItem>
           <NavItem className="px-3">
-            <Link to="/">Colleges</Link>
+            <Link to="/" className="nav-link" >Colleges</Link>
           </NavItem>
           <NavItem className="px-3">
             <NavLink href="#">Settings</NavLink>

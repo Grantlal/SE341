@@ -555,6 +555,20 @@ class Dashboard extends Component {
                       <DropdownItem><i className="cui-star icons"></i> Ranked #2 for best STEM jobs </DropdownItem>
                       </DropdownMenu>
                   </AppHeaderDropdown>
+                
+                  <AppHeaderDropdown>
+                    <DropdownToggle block color="green">
+                      <div className="text-white bg-green" classname-> <i className="cui-info icons" /> Graduation Requirements </div>
+                    </DropdownToggle>
+                     <DropdownMenu left style={{ left: 'auto' }}>
+                      <DropdownItem header tag="div" className="text-center"><strong>Requirements</strong></DropdownItem>
+                      <DropdownItem> <i className="cui-star icons"></i> Minimum of 2.5 GPA in Software Engineering required courses<br></br> </DropdownItem>
+                      <DropdownItem><i className="cui-star icons"></i> Contains a total of 122 credits, with 40 for liberal education <br></br> </DropdownItem>
+                      <DropdownItem><i className="cui-star icons"></i> 75 Credits for program requirements </DropdownItem>
+                      <DropdownItem><i className="cui-star icons"></i> 25 credits for electives </DropdownItem>
+                      <DropdownItem><i className="cui-star icons"></i> Mandatory internship for credit</DropdownItem>
+                    </DropdownMenu>
+                  </AppHeaderDropdown>
                 </div>
               </CardBody>
               <div className="text-value" style={{ height: "40px" }} />
@@ -575,7 +589,7 @@ class Dashboard extends Component {
                     <div classname="small text">4 Year, Public</div>
                   </Col>
                 </Row>
-                <div className="text-value" style={{ height: "10px" }} />
+                <div className="text-value" style={{ height: "40px" }} />
               </CardBody>
             </Card>
           </Col>
@@ -597,9 +611,22 @@ class Dashboard extends Component {
                       <DropdownItem><i className="cui-star icons"></i> 1 of 2 Minnesota Schools acredited by the Computing Accreditation Commission <br></br>
                                                                       of Accreditation Board for Engineers Technology </DropdownItem>
                       <DropdownItem><i className="cui-star icons"></i> Laboratory projects considered graduate-level work</DropdownItem>
-
                       </DropdownMenu>
-                  </AppHeaderDropdown> </div>
+                  </AppHeaderDropdown>
+                  
+                  <AppHeaderDropdown>
+                    <DropdownToggle block color="green">
+                      <div className="text-white bg-green" classname-> <i className="cui-info icons" /> Graduation Requirements </div>
+                    </DropdownToggle>
+                     <DropdownMenu left style={{ left: 'auto' }}>
+                      <DropdownItem header tag="div" className="text-center"><strong>Requirements</strong></DropdownItem>
+                      <DropdownItem> <i className="cui-star icons"></i> Minimum of 2.5 GPA in Computer Science required courses<br></br> </DropdownItem>
+                      <DropdownItem><i className="cui-star icons"></i> 59-63 Program requirements <br></br> </DropdownItem>
+                      <DropdownItem><i className="cui-star icons"></i> 20 required elective credits </DropdownItem>
+                    </DropdownMenu>
+                  </AppHeaderDropdown>
+                </div>
+                   
              </CardBody>
               <div className="text-value" style={{ height: "40px" }} />
               </Card>
@@ -642,9 +669,20 @@ class Dashboard extends Component {
                       <DropdownItem><i className="cui-star icons"></i> Graduates receive an average hourly pay of $35 per hour <br></br> </DropdownItem>
                       <DropdownItem><i className="cui-star icons"></i> Many graduates work at notable companies like Ch Robinson, <br></br> 
                                                                        GeoComm, and Wolters Kluwer. </DropdownItem>
-
                       </DropdownMenu>
-                  </AppHeaderDropdown> </div>
+                  </AppHeaderDropdown> 
+                  
+                  <AppHeaderDropdown>
+                    <DropdownToggle block color="green">
+                      <div className="text-white bg-green" classname-> <i className="cui-info icons" /> Graduation Requirements </div>
+                    </DropdownToggle>
+                     <DropdownMenu left style={{ left: 'auto' }}>
+                      <DropdownItem header tag="div" className="text-center"><strong>Requirements</strong></DropdownItem>
+                      <DropdownItem> <i className="cui-star icons"></i> 71 Credits required<br></br> </DropdownItem>
+                      <DropdownItem><i className="cui-star icons"></i> Can transfer to SCSU for BS in information science <br></br> </DropdownItem>
+                    </DropdownMenu>
+                  </AppHeaderDropdown>
+                </div>
               </CardBody>
               <div className="text-value" style={{ height: "40px" }} />
               </Card>
@@ -688,7 +726,21 @@ class Dashboard extends Component {
                       <DropdownItem><i className="cui-star icons"></i> 26% of graduates work in healthcare or government agencies <br></br> </DropdownItem>
                       <DropdownItem divider />
                       </DropdownMenu>
-                  </AppHeaderDropdown> </div>
+                  </AppHeaderDropdown> 
+
+                  <AppHeaderDropdown>
+                    <DropdownToggle block color="yellow">
+                      <div className="text-white bg-yellow" classname-> <i className="cui-info icons" /> Graduation Requirements </div>
+                    </DropdownToggle>
+                     <DropdownMenu left style={{ left: 'auto' }}>
+                      <DropdownItem header tag="div" className="text-center"><strong>Requirements</strong></DropdownItem>
+                      <DropdownItem> <i className="cui-star icons"></i> Minimum of 2.5 GPA in Software Engineering required courses<br></br> </DropdownItem>
+                      <DropdownItem><i className="cui-star icons"></i> Recomended 3.0 GPA <br></br> </DropdownItem>
+                      <DropdownItem><i className="cui-star icons"></i> Cannot dual major in the college of science and engineering department </DropdownItem>
+                      <DropdownItem><i className="cui-star icons"></i> 120 Credits required for graduation </DropdownItem>
+                    </DropdownMenu>
+                  </AppHeaderDropdown>
+                </div>
               </CardBody>
               <div className="text-value" style={{ height: "40px" }} />
             </Card>
@@ -733,7 +785,21 @@ class Dashboard extends Component {
                                                                         excellence in cyber operation by the NSA</DropdownItem>
                       <DropdownItem divider />
                       </DropdownMenu>
-                  </AppHeaderDropdown> </div>
+                  </AppHeaderDropdown> 
+
+                  <AppHeaderDropdown>
+                    <DropdownToggle block color="yellow">
+                      <div className="text-white bg-yellow" classname-> <i className="cui-info icons" /> Graduation Requirements </div>
+                    </DropdownToggle>
+                     <DropdownMenu left style={{ left: 'auto' }}>
+                      <DropdownItem header tag="div" className="text-center"><strong>Requirements</strong></DropdownItem>
+                      <DropdownItem> <i className="cui-star icons"></i> 120 Credit Program<br></br> </DropdownItem>
+                      <DropdownItem><i className="cui-star icons"></i> 46 hours of liberal education <br></br> </DropdownItem>
+                      <DropdownItem><i className="cui-star icons"></i> Must complete a writing-in-the-discipline course </DropdownItem>
+                      <DropdownItem><i className="cui-star icons"></i> Computer Science principles required as pre-requisite </DropdownItem>
+                    </DropdownMenu>
+                  </AppHeaderDropdown>
+                </div>
               </CardBody>
               <div className="text-value" style={{ height: "40px" }} />
             </Card>
