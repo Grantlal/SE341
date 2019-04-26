@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Badge, Card, CardBody, CardHeader, Col, Row, Table } from 'reactstrap';
 import Dropzone from 'react-dropzone'
+import {useDropzone} from 'react-dropzone';
+
 
 
 import usersData from './UsersData'
@@ -29,6 +31,30 @@ function UserRow(props) {
   )
 }
 
+function Basic(props) {
+  const {acceptedFiles, getRootProps, getInputProps} = useDropzone();
+  
+  const files = acceptedFiles.map(file => (
+    <li key={file.path}>
+      {file.path} - {file.size} bytes
+    </li>
+  ));
+
+  return (
+    <section className="container">
+      <div {...getRootProps({className: 'dropzone'})}>
+        <input {...getInputProps()} />
+        <i className="cui-file icons font-2xl d-block mt-4"/>
+        <p>Drag 'n' drop some files here, or click to select files</p>
+      </div>
+      <aside>
+        <h4>Accepted Files</h4>
+        <ul>{files}</ul>
+      </aside>
+    </section>
+  );
+}
+
 class Users extends Component {
 
   render() {
@@ -41,18 +67,8 @@ class Users extends Component {
         <Row>
           <Col align="center">
             <Card align="center">
-            <Dropzone onDrop={acceptedFiles => console.log(acceptedFiles)}>
-              {({getRootProps, getInputProps}) => (
-                <section>
-                  <div {...getRootProps()}>
-                    <input {...getInputProps()} />
-                      <p>Drag 'n' drop some files here, or click to select files
-                        <i className="cui-file icons font-2xl d-block mt-4"/>
-                     </p>
-                  </div>
-                </section>
-               )}
-              </Dropzone>
+            <Basic></Basic>
+            
             </Card>
           </Col>
         </Row>

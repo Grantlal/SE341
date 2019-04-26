@@ -43,7 +43,7 @@ class DefaultLayout extends Component {
         <div className="app-body">
 
           <main className="main">
-            <AppBreadcrumb appRoutes={routes}/>
+            
             <Container fluid>
               <Suspense fallback={this.loading()}>
                 <Switch>

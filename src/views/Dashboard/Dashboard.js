@@ -654,14 +654,14 @@ class Dashboard extends Component {
 
         <Row>
           <Col xs="12" sm="6" lg="3">
-            <Card className="text-white bg-green">
+            <Card className="text-white bg-yellow">
               <CardBody className="pb-0">
                 <div className="text-value"> <center> 72% Match </center> </div>
                 <div> <center> 2,782 Enrolled </center> </div>
                 <div>  
                   <AppHeaderDropdown direction="down">
-                  <DropdownToggle block color="green">
-                      <div className="text-white bg-green"> <i className="icon-cursor" /> Program Highlights </div>
+                  <DropdownToggle block color="yellow">
+                      <div className="text-white bg-yellow"> <i className="icon-cursor" /> Program Highlights </div>
                     </DropdownToggle>
                      <DropdownMenu left style={{ left: 'auto' }}>
                       <DropdownItem header tag="div" className="text-center"><strong>Highlights</strong></DropdownItem>
@@ -673,8 +673,8 @@ class Dashboard extends Component {
                   </AppHeaderDropdown> 
                   
                   <AppHeaderDropdown>
-                    <DropdownToggle block color="green">
-                      <div className="text-white bg-green" classname-> <i className="cui-info icons" /> Graduation Requirements </div>
+                    <DropdownToggle block color="yellow">
+                      <div className="text-white bg-yellow" classname-> <i className="cui-info icons" /> Graduation Requirements </div>
                     </DropdownToggle>
                      <DropdownMenu left style={{ left: 'auto' }}>
                       <DropdownItem header tag="div" className="text-center"><strong>Requirements</strong></DropdownItem>
@@ -767,15 +767,15 @@ class Dashboard extends Component {
 
         <Row>
           <Col xs="12" sm="6" lg="3">
-            <Card className="text-white bg-yellow">
+            <Card className="text-white bg-red">
               <CardBody className="pb-0">
                 <ButtonGroup className="float-right" />
                 <div className="text-value"><center> 52% Match </center> </div>
                 <div> <center> 12,259 Enrolled </center> </div>
                 <div>  
                   <AppHeaderDropdown direction="down">
-                  <DropdownToggle block color="yellow">
-                      <div className="text-white bg-yellow"> <i className="icon-cursor" /> Program Highlights </div>
+                  <DropdownToggle block color="red">
+                      <div className="text-white bg-red"> <i className="icon-cursor" /> Program Highlights </div>
                     </DropdownToggle>
                      <DropdownMenu left style={{ left: 'auto' }}>
                       <DropdownItem header tag="div" className="text-center"><strong>Highlights</strong></DropdownItem>
@@ -788,8 +788,8 @@ class Dashboard extends Component {
                   </AppHeaderDropdown> 
 
                   <AppHeaderDropdown>
-                    <DropdownToggle block color="yellow">
-                      <div className="text-white bg-yellow" classname-> <i className="cui-info icons" /> Graduation Requirements </div>
+                    <DropdownToggle block color="red">
+                      <div className="text-white bg-red" classname-> <i className="cui-info icons" /> Graduation Requirements </div>
                     </DropdownToggle>
                      <DropdownMenu left style={{ left: 'auto' }}>
                       <DropdownItem header tag="div" className="text-center"><strong>Requirements</strong></DropdownItem>
